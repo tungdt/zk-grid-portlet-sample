@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>sample-zk-portlet-parent</artifactId>
+    <groupId>org.exoplatform.addons.portlets</groupId>
+    <version>1.1.x-SNAPSHOT</version>
+  </parent>
+  <artifactId>sample-zk-portlet</artifactId>
+  <packaging>war</packaging>
+  <name>Sample zk MVC Portlet</name>
+  <description>Sample zk MVC Portlet</description>
+  <properties>
+    <exoplatform.version>4.3.0</exoplatform.version>
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Import versions from platform project -->
+      <dependency>
+        <groupId>org.exoplatform.platform</groupId>
+        <artifactId>platform</artifactId>
+        <version>${exoplatform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <dependencies>
+    
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zkplus</artifactId>
+      <version>6.5.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zhtml</artifactId>
+      <version>6.5.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zkbind</artifactId>
+      <version>6.5.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zkoss.zk</groupId>
+      <artifactId>zul</artifactId>
+      <version>6.5.2</version>
+    </dependency>
+  </dependencies>
+  
+</project>
